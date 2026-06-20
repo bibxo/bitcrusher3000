@@ -1,0 +1,87 @@
+:root{
+--bg:#090909;
+--panel:#141414;
+--accent:#00d4ff;
+--accent2:#8a2be2;
+
+--text:#ffffff;
+--muted:#aaaaaa;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+background:var(--bg);
+color:var(--text);
+font-family:'Cooper Black', Arial, sans-serif;
+line-height:1.4;
+}
+.hero{
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background: radial-gradient(circle at top,#8a2be240 0%,transparent 50%),
+linear-gradient(135deg,#090909,#111111);
+padding:60px 20px;
+}
+.hero-content{max-width:900px; padding:0 20px;}
+.logo{
+font-family:'Cooper Black', Arial, sans-serif;
+font-size:5rem;
+font-weight:900;
+color:var(--accent);
+text-shadow:0 0 25px var(--accent);
+}
+.subtitle{
+font-size:1.4rem;
+color:var(--muted);
+margin-top:30px;
+}
+
+
+.download-btn{
+display:inline-block;
+margin-top:45px;
+padding:18px 40px;
+background:linear-gradient(90deg,var(--accent),var(--accent2));
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-size:1.2rem;
+font-weight:bold;
+transition:.3s;
+}
+.download-btn:hover{transform:scale(1.05);}
+section{
+padding:120px 12%;
+}
+.section-title{
+text-align:center;
+font-size:2.4rem;
+margin-bottom:60px;
+color:var(--accent);
+}
+.release{
+max-width:700px;
+margin:auto;
+background:var(--panel);
+padding:40px;
+border-radius:15px;
+}
+.release p{
+margin-bottom:18px;
+}
+.release p:last-child{
+margin-bottom:0;
+}
+.footer{
+text-align:center;
+padding:40px 20px;
+border-top:1px solid #222;
+color:#888;
+}
